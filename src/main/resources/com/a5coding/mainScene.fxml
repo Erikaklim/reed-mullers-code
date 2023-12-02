@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.a5coding.controllers.MainController">
+   <children>
+      <Label id="titleLabel" layoutX="42.0" layoutY="14.0" prefHeight="65.0" prefWidth="266.0" style="-fx-font-weight: bold;" text="Decoding Reed-Muller's code RM(1, M) with Fast Hadamard Transform" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="108.0" text="m: " />
+      <Label layoutX="36.0" layoutY="142.0" text="p:" />
+      <TextField id="mTextField" fx:id="mTextField" layoutX="64.0" layoutY="104.0" />
+      <TextField id="pTextField" fx:id="pTextField" layoutX="64.0" layoutY="138.0" />
+      <Button fx:id="nextButton" layoutX="337.0" layoutY="264.0" mnemonicParsing="false" onAction="#switchToEncodeScene" text="Next" />
+      <RadioButton fx:id="vectorRadioButton" layoutX="105.0" layoutY="182.0" mnemonicParsing="false" selected="true" text="Vector">
+         <toggleGroup>
+            <ToggleGroup fx:id="inputTypeGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="textRadioButton" layoutX="105.0" layoutY="210.0" mnemonicParsing="false" text="Text" toggleGroup="$inputTypeGroup" />
+      <Label layoutX="36.0" layoutY="182.0" text="Input type:" />
+      <RadioButton layoutX="106.0" layoutY="238.0" mnemonicParsing="false" text="Image" toggleGroup="$inputTypeGroup" />
+   </children>
+</AnchorPane>

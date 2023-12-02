@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="404.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.a5coding.controllers.EncodeController">
+   <children>
+      <Label id="titleLabel" fx:id="enterMessageLabel" layoutX="36.0" layoutY="27.0" prefHeight="25.0" prefWidth="233.0" text="Enter message of size" textAlignment="CENTER" wrapText="true" />
+      <Label layoutX="36.0" layoutY="69.0" text="Message: " />
+      <TextField id="mTextField" fx:id="messageField" layoutX="100.0" layoutY="65.0" prefHeight="25.0" prefWidth="274.0" />
+      <Button fx:id="encodeButton" layoutX="318.0" layoutY="106.0" mnemonicParsing="false" onAction="#encode" text="Encode" />
+      <Button fx:id="sendButton" layoutX="319.0" layoutY="267.0" mnemonicParsing="false" onAction="#send" prefHeight="25.0" prefWidth="55.0" text="Send" />
+      <Label fx:id="encodedMessageLabel" layoutX="36.0" layoutY="189.0" text="Encoded message:" />
+      <TextField fx:id="enMessage" editable="false" layoutX="36.0" layoutY="219.0" prefHeight="25.0" prefWidth="339.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.a5coding.controllers.DecodeController">
+   <children>
+      <Label layoutX="27.0" layoutY="32.0" text="Received message: " />
+      <Label layoutX="29.0" layoutY="104.0" text="Errors:" />
+      <Label layoutX="29.0" layoutY="133.0" text="Positions:" />
+      <Button fx:id="decodeButton" layoutX="315.0" layoutY="171.0" mnemonicParsing="false" onAction="#decode" text="Decode" />
+      <Button fx:id="editButton" layoutX="240.0" layoutY="171.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="57.0" text="Edit" />
+      <Label layoutX="30.0" layoutY="206.0" text="Decoded message:" />
+      <Button fx:id="homeButton" layoutX="314.0" layoutY="273.0" mnemonicParsing="false" onAction="#switchToMainScene" prefHeight="25.0" prefWidth="57.0" text="Home" />
+      <TextField fx:id="receivedMessageField" layoutX="27.0" layoutY="61.0" prefHeight="25.0" prefWidth="345.0" />
+      <Label fx:id="errorsLabel" layoutX="67.0" layoutY="104.0" prefHeight="17.0" prefWidth="345.0" wrapText="true" />
+      <TextField fx:id="positionsField" editable="false" layoutX="91.0" layoutY="129.0" prefHeight="25.0" prefWidth="281.0" />
+      <TextField fx:id="decodedMessageField" editable="false" layoutX="27.0" layoutY="234.0" prefHeight="25.0" prefWidth="345.0" />
+   </children>
+</AnchorPane>
